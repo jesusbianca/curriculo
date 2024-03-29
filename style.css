@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 30, 30);
+  }
+
+nav {
+    background-color: rgb(248, 231, 248);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-direction:row;
+    align-items: center;
+    
+  }
+  
+.logo img {
+	height: 74px;
+    width:74px;
+} 
+nav a{
+    display: inline-block;
+    position: relative;
+    color: purple;
+    font-family: garamond;
+    font-size:x-large;
+    cursor: pointer;
+    transition:0.4s all ease;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover{
+    color:grey;
+    transition:0.4s all ease;
+}
+a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background-color:purple ;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+    
+}
+a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* cursos */
+.content{
+    max-width:1000px;
+    min-width:300px;
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+}
+section .catalog {
+    width: 100vw;
+    padding:100px;
+}
+
+section .card-wrapper{
+    max-width: 1000px ;
+    height:100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap:30px;
+    padding-top:50px;
+}
+
+.card-content{
+    height:90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .card-item{
+    height:400px;
+    background:  rgb(248, 231, 248) ;
+    border-radius: 8px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.card-item img{
+    width:55%;
+}
+
+.card-item h4 {
+    width: 90%;
+    
+}
+.card-item p{
+    width: 80%;
+    font-style:garamond;
+    color: black;
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+h1{
+    color: purple;
+    font-size: garamond;
+    padding: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:xx-large;
+
+}
+
+.rodape{
+    text-align: center;
+    font-family:garamond;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 10px;
+    background-color:rgb(248, 231, 248) ; 
+    flex-direction:column;
+    line-height: 40px ;
+}
+
+/*Sobre mim*/
+.container{
+    height: auto;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+
+}
+
+.card-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card{
+    width:150px ;
+    height: 150px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(248, 231, 248)  ;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/B__1_-removebg-preview.png);
+
+}
+
+.card2{
+    width:300px ;
+    height: 300px;
+    border-radius: 100%;
+    margin: 3rem  0 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(248, 231, 248)  ;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/Bianca.jpeg);
+    border: purple solid 3px;
+}
+.card3{
+    width:700px ;
+    height: 700px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/B__1_-removebg-preview.png);
+
+}
+.card-text{
+    width: 65%;
+    letter-spacing: 1px;
+    color: rgb(248, 231, 248);
+    font-family:garamond;
+
+}
+
+.card-text1{
+    width: 90%;
+    letter-spacing: 1px;
+    color: rgb(248, 231, 248);
+    font-family:garamond;
+}
+h2{
+    color: purple;
+}
+
+.imagem-curriculo{
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+.alinhamento-tabela{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.titulo-tabela{
+    color:white;
+    font-family:garamond;
+    text-align: center;
+    text-decoration: none;
+    padding: 30px;
+    margin-top: 10px;
+}
+table,th,td{
+    border: 1px solid purple;
+    border-collapse:collapse;
+    padding: 5px 2px 5px 2px;
+    font-family: garamond;
+    background-color: rgb(248, 231, 248);
+
+}
+.titulo-tabelas{
+    color:purple;
+    font-family: tahoma;
+}
+th{
+    background-color:rgb(248, 231, 248) ;
+}
+tr:hover{
+    background-color: rgb(247, 244, 244);
+}
+.conteudo-tabela{
+    text-align:center;
+    color:purple;
+}
+
+
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ccc;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select,
+input[type="file"] {
+	width: 100%;
+	padding: 5px ;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+input[type="submit"] {
+	background-color: purple;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: rgb(248, 231, 248);
+  }
+  
+.logo-bianca{
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+.imagem-bia{
+    display: flex;
+    flex-direction:column;
+    align-items:center; 
+}
+
+.contacts {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacts li {
+    margin: 0 10px;
+  }
+  
+  .contacts a {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .contacts a:hover {
+    color: #0077B5; /*cor do linkedin*/
+  }
+  
+ 
+  .fa-linkedin:before {
+    content: "\f08c";
+  }
+  
+  .fa-whatsapp:before {
+    content: "\f232";
+  }
+  
+  .fa-envelope:before {
+    content: "";
+  }
+  
+  .fa-instagram:before {
+    content: "\f16d";
+  }
+
+  .card-text4{
+    width: 10%;
+    letter-spacing: 1px;
+    color: rgb(248, 231, 248);
+    font-family:garamond;
+    font-size:xx-large;
+
+
+}
